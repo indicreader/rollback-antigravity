@@ -129,10 +129,4 @@ MIT License
 
 Built for the developer community to simplify rollback workflows and reduce downtime during unstable releases.
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=indicreader&theme=juicyfresh" alt="Trophies" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=indicreader&theme=dracula" alt="Activity Graph" />
-</p>
+[![Your GitHub Stats](https://github-readme-stats.vercel.io/api?username=indicreader&theme=retro&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
