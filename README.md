@@ -128,3 +128,5 @@ MIT License
 # Maintainers
 
 Built for the developer community to simplify rollback workflows and reduce downtime during unstable releases.
+
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=indicreader&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
