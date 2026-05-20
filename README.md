@@ -129,4 +129,10 @@ MIT License
 
 Built for the developer community to simplify rollback workflows and reduce downtime during unstable releases.
 
-[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=indicreader&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=indicreader&theme=juicyfresh" alt="Trophies" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=indicreader&theme=dracula" alt="Activity Graph" />
+</p>
