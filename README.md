@@ -47,15 +47,18 @@ without manually hunting old binaries or reverting complex setups.
 # Usage
 
 ## Run the batch file as administrator
+look at the repo find the file code either directly download or copy paste it in notepad and save as rollback.bat and right click on the file, run as administrator
+## before you run the script close the antigravity active window and uninstall the 2.0 version, download the previous version from here https://antigravity.google/releases
+after that run the script and install the older version you will be able to install the previous version of your choosing without automatically updadating to the 2.0 version
 
 ```bat
-rollback_to_1.23.2.bat
+rollback.bat
 ```
 
 or from terminal:
 
 ```powershell
-.\rollback_to_1.23.2.bat
+.\rollback.bat
 ```
 
 ---
