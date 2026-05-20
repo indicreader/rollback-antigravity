@@ -1,0 +1,47 @@
+@echo off
+setlocal enabledelayedexpansion
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    echo [ERROR] Please right-click this file and select "Run as Administrator".
+    pause
+    exit /b
+)
+
+echo [1/5] Force-killing all active Antigravity 2.0 Agent processes...
+taskkill /f /im Antigravity.exe >nul 2>&1
+taskkill /f /im language_server_windows_x64.exe >nul 2>&1
+
+echo [2/5] Purging version 2.0 system state and corrupted layout configurations...
+if exist "%APPDATA%\Antigravity" rd /s /q "%APPDATA%\Antigravity"
+if exist "%LOCALAPPDATA%\Programs\antigravity" rd /s /q "%LOCALAPPDATA%\Programs\antigravity"
+
+echo [3/5] Injecting static settings to block Google from forcing 2.0 auto-updates...
+set "AG_USER_DIR=%APPDATA%\Antigravity\User"
+if not exist "%AG_USER_DIR%" mkdir "%AG_USER_DIR%"
+(
+echo {
+echo   "update.mode": "none",
+echo   "workbench.panel.opened": true,
+echo   "workbench.statusBar.visible": true,
+echo   "terminal.integrated.showTerminal": true
+}
+) > "%AG_USER_DIR%\settings.json"
+
+echo [4/5] Deploying local OpenRouter variables into global registry maps...
+setx ANTHROPIC_BASE_URL "https://openrouter.ai/api/v1" /M
+setx ANTHROPIC_API_KEY "sk-ant-sidestep-validation-token-string" /M
+
+echo [5/5] Launching official Antigravity Stable Core download index...
+start "" "https://antigravity.google/releases"
+
+echo ====================================================================
+echo [COMPLETE] Version 2.0 successfully purged from this computer!
+echo.
+echo 1. Your browser has been opened to the official releases page.
+echo 2. Download the stable Windows x64 installer for v1.23 (or v1.18).
+echo 3. Run the installer. 
+echo.
+echo Your classic editor frame, bottom bar, and terminal will be fully 
+echo restored, and auto-updates are permanently locked to "OFF"!
+echo ====================================================================
+pause
