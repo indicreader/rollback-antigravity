@@ -129,4 +129,3 @@ MIT License
 
 Built for the developer community to simplify rollback workflows and reduce downtime during unstable releases.
 
-[![Your GitHub Stats](https://github-readme-stats.vercel.io/api?username=indicreader&theme=retro&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
